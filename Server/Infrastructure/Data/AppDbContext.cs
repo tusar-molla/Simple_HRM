@@ -26,7 +26,7 @@ namespace Server.Infrastructure.Data
                     Id = 1,
                     FullName = "Admin",
                     Email = "admin@gmail.com",
-                    PasswordHash = "$2a$11$h3kr1K4Fgs6zl42LPP5D1uo3Xdy3yrMX5FtrfgQsTCqqBGgZE6jyW",
+                   // PasswordHash = hasher.HashPassword(null, "Admin@123"),
                     RoleId = 1
                 }
                 );
