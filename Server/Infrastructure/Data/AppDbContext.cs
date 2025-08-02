@@ -10,6 +10,10 @@ namespace Server.Infrastructure.Data
 
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Designation> Designations { get; set; }
+        public DbSet<Shift> Shifts { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -27,15 +31,7 @@ namespace Server.Infrastructure.Data
                     Id = 1,
                     FullName = "Admin",
                     Email = "admin@gmail.com",
-                    PasswordHash = PasswordHasher.HashPassword("
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    "),
+                    PasswordHash = PasswordHasher.HashPassword("Admin@123"),
                     RoleId = 1
                 }
                 );
