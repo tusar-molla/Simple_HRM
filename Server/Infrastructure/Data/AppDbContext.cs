@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Server.Domain.Entities;
+using Server.Helpers;
 
 namespace Server.Infrastructure.Data
 {
@@ -26,7 +27,15 @@ namespace Server.Infrastructure.Data
                     Id = 1,
                     FullName = "Admin",
                     Email = "admin@gmail.com",
-                   // PasswordHash = hasher.HashPassword(null, "Admin@123"),
+                    PasswordHash = PasswordHasher.HashPassword("
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    "),
                     RoleId = 1
                 }
                 );
